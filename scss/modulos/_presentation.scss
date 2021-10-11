@@ -1,0 +1,29 @@
+  .caja{
+    padding: 25px;
+}
+.grid-container{
+    display: grid;
+    height: 450px;
+    grid-template-areas: 'contenido contenido contenido'
+                         'c1 c2 c3'                        
+}
+
+.contenido{
+    grid-area: contenido;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(146, 146, 255);
+}
+
+.card1{
+    grid-area: c1;
+    background-color: rgb(245, 245, 255);
+}
+.card2{
+    grid-area: c2;
+    background-color: rgb(245, 245, 255);
+}
+.card3{
+    grid-area: c3;
+    background-color: rgb(245, 245, 255);
+}
