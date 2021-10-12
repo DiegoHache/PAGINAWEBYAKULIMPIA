@@ -34,18 +34,74 @@
   background-color: green; }
 
 .laboratoriodigital {
-  width: 100%;
-  height: 45px; }
-  .laboratoriodigital__triangle {
-    background-color: red; }
-
-
-.banner {
-  background-image: url("../assets/yaku.PNG");
-  background-size: cover;
-  width: 100%;
-  height: 30%;
-  background-repeat: no-repeat;
-}
+  width: 80%;
+  max-width: 1080px;
+  height: 50px;
+  margin: auto;
+  display: block; }
+  .laboratoriodigital__triangleTop {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom left, transparent 49.5%, #4A5F74 50%); }
+  .laboratoriodigital__body {
+    background: #4A5F74;
+    border: #4A5F74;
+    display: flex;
+    padding: 30px;
+    padding-top: 50px; }
+    .laboratoriodigital__body__left {
+      width: 30%;
+      position: static;
+      padding: 20px; }
+      .laboratoriodigital__body__left__contenedorCircular {
+        border: pink dotted 1px;
+        display: block;
+        padding: 20px; }
+        .laboratoriodigital__body__left__contenedorCircular--img {
+          width: 100%;
+          height: 100%;
+          display: block; }
+      .laboratoriodigital__body__left__contenedorContenido {
+        text-align: center; }
+        .laboratoriodigital__body__left__contenedorContenido--title {
+          color: white; }
+        .laboratoriodigital__body__left__contenedorContenido--description {
+          margin-top: 15px; }
+    .laboratoriodigital__body__right {
+      width: 70%; }
+      .laboratoriodigital__body__right__contenedorTop {
+        text-align: end;
+        white-space: nowrap; }
+        .laboratoriodigital__body__right__contenedorTop__inside {
+          position: relative;
+          display: inline-flex;
+          justify-content: flex-end;
+          height: 100%;
+          width: 100%; }
+          .laboratoriodigital__body__right__contenedorTop__inside--icon {
+            display: inline-block;
+            background-color: white;
+            color: #4A5F74;
+            padding: 8px;
+            padding-top: 10px;
+            border-radius: 8px 0px 0px 8px; }
+          .laboratoriodigital__body__right__contenedorTop__inside--input {
+            display: inline-block;
+            background: white;
+            color: #4A5F74;
+            border: none;
+            border-radius: 0px 8px 8px 0px; }
+            .laboratoriodigital__body__right__contenedorTop__inside--input:focus {
+              color: #4A5F74;
+              outline-offset: 0px;
+              outline: #4A5F74; }
+      .laboratoriodigital__body__right__contenedorMiddle {
+        color: white;
+        align-content: center;
+        text-align: center;
+        width: 80%;
+        margin-top: 50px; }
+      .laboratoriodigital__body__right__contenedorBottom {
+        background-color: green; }
 
 /*# sourceMappingURL=estilos.css.map */
