@@ -137,15 +137,18 @@
                         text-align: center;
                         margin-left: 10px;
                         margin-right: 10px;
+                        //margin: auto;
 
                         &__contenedorimg{
 
                             width: 100%;
-                            border: dotted 1px gold;
+                            margin: auto;
+                            //border: dotted 1px gold;
                             
                             
                             &--img{
                                 width: 60%;
+                                margin: auto;
                                 height: 100%;
                                 padding: 30px;
                                 text-align: center;
