@@ -31,7 +31,7 @@
 
             &__contenedorCircular{
 
-                border: pink dotted 1px;
+                //border: pink dotted 1px;
                 display: block;
                 padding: 20px;
 
@@ -118,8 +118,67 @@
 
             &__contenedorBottom{
                 
+                &--subtittle{
+
+                    display: inline-block;
+                }
+
+                &__contenedorMain{
+
+                    display: flex;
+
+                    &__card{
+                        display: block;
+                        width: 100%;
+                        background-color: white;
+                        text-align: center;
+                        margin-left: 10px;
+                        margin-right: 10px;
+
+                        &__contenedorimg{
+
+                            width: 100%;
+                            border: dotted 1px gold;
+                            
+                            
+                            &--img{
+                                width: 60%;
+                                height: 100%;
+                                padding: 30px;
+                                text-align: center;
+                                display: block;
+                            }
+                        }
+
+                        &--name{
+                            display: block ;
+                            //size: 50px;
+                            font-size: 25px;
+                        }
+
+                        &--username{
+                            display: inline-block;
+                            border-radius: 15px;
+                            margin: 5px 0px;
+                            padding: 5px;
+                            border: black solid 1px;
+                        }
+
+                        &--nivel{
+                            margin: auto;
+                            margin-bottom: 10px;
+                            font-size: 10px;
+                            display: block;
+                            align-items: center;
+                            background-color: black;
+                            color: white;
+                            padding: 8px;
+                        }
+                    }
+
+                }
                 
-                background-color: green;
+                //background-color: green;
             }
             
         }

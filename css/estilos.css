@@ -54,7 +54,6 @@
       position: static;
       padding: 20px; }
       .laboratoriodigital__body__left__contenedorCircular {
-        border: pink dotted 1px;
         display: block;
         padding: 20px; }
         .laboratoriodigital__body__left__contenedorCircular--img {
@@ -101,7 +100,43 @@
         text-align: center;
         width: 80%;
         margin-top: 50px; }
-      .laboratoriodigital__body__right__contenedorBottom {
-        background-color: green; }
+      .laboratoriodigital__body__right__contenedorBottom--subtittle {
+        display: inline-block; }
+      .laboratoriodigital__body__right__contenedorBottom__contenedorMain {
+        display: flex; }
+        .laboratoriodigital__body__right__contenedorBottom__contenedorMain__card {
+          display: block;
+          width: 100%;
+          background-color: white;
+          text-align: center;
+          margin-left: 10px;
+          margin-right: 10px; }
+          .laboratoriodigital__body__right__contenedorBottom__contenedorMain__card__contenedorimg {
+            width: 100%;
+            border: dotted 1px gold; }
+            .laboratoriodigital__body__right__contenedorBottom__contenedorMain__card__contenedorimg--img {
+              width: 60%;
+              height: 100%;
+              padding: 30px;
+              text-align: center;
+              display: block; }
+          .laboratoriodigital__body__right__contenedorBottom__contenedorMain__card--name {
+            display: block;
+            font-size: 25px; }
+          .laboratoriodigital__body__right__contenedorBottom__contenedorMain__card--username {
+            display: inline-block;
+            border-radius: 15px;
+            margin: 5px 0px;
+            padding: 5px;
+            border: black solid 1px; }
+          .laboratoriodigital__body__right__contenedorBottom__contenedorMain__card--nivel {
+            margin: auto;
+            margin-bottom: 10px;
+            font-size: 10px;
+            display: block;
+            align-items: center;
+            background-color: black;
+            color: white;
+            padding: 8px; }
 
 /*# sourceMappingURL=estilos.css.map */
