@@ -118,9 +118,10 @@
           margin-right: 10px; }
           .laboratoriodigital__body__right__contenedorBottom__contenedorMain__card__contenedorimg {
             width: 100%;
-            border: dotted 1px gold; }
+            margin: auto; }
             .laboratoriodigital__body__right__contenedorBottom__contenedorMain__card__contenedorimg--img {
               width: 60%;
+              margin: auto;
               height: 100%;
               padding: 30px;
               text-align: center;
