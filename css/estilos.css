@@ -395,4 +395,44 @@
   .contenedorMuestras .presencia {
     background-color: #E02401; }
 
+.contenedorMapadecalor {
+  width: 80%;
+  max-width: 1080px;
+  margin: auto;
+  height: 100%;
+  display: block;
+  position: static; }
+  .contenedorMapadecalor__triangleTop--triangle {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to bottom left, transparent 49.5%, #F0E5CF 50%); }
+  .contenedorMapadecalor__body {
+    background: #F0E5CF;
+    display: flex;
+    padding: 30px;
+    padding-top: 50px; }
+    .contenedorMapadecalor__body__left {
+      width: 30%;
+      position: static;
+      padding: 20px; }
+      .contenedorMapadecalor__body__left__contenedorCircular {
+        display: block;
+        padding: 20px; }
+        .contenedorMapadecalor__body__left__contenedorCircular--img {
+          width: 100%;
+          height: 100%;
+          display: block; }
+      .contenedorMapadecalor__body__left__contenedorContenido {
+        text-align: center; }
+        .contenedorMapadecalor__body__left__contenedorContenido--title {
+          color: #4A5F74; }
+        .contenedorMapadecalor__body__left__contenedorContenido--description {
+          margin-top: 15px; }
+    .contenedorMapadecalor__body__right {
+      width: 70%; }
+      .contenedorMapadecalor__body__right--mapa {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px; }
+
 /*# sourceMappingURL=estilos.css.map */
