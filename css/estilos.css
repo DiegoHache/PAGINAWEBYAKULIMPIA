@@ -4,38 +4,86 @@
   margin: 0;
   padding: 0; }
 
-.caja {
-  padding: 25px; }
-
-.grid-container {
-  display: grid;
-  height: 450px;
-  grid-template-areas: "contenido contenido contenido" "c1 c2 c3"; }
-
-.contenido {
-  grid-area: contenido;
-  text-align: center;
-  align-items: center;
-  background-color: #9292ff; }
-
-.card1 {
-  grid-area: c1;
-  background-color: #f5f5ff; }
-
-.card2 {
-  grid-area: c2;
-  background-color: #f5f5ff; }
-
-.card3 {
-  grid-area: c3;
-  background-color: #f5f5ff; }
-
+/*PRESENTACION INICIOOOOOOOOOOOOOOOO*/
 .banner {
   background-image: url("../assets/yaku.PNG");
   background-size: cover;
   width: 100%;
   height: 30%;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  margin-top: 0px; }
+
+.pbanner {
+  padding-right: 100px;
+  padding-left: 77px;
+  padding-top: 385px;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif; }
+
+.parrafobanner {
+  color: thistle;
+  font-family: Georgia, 'Times New Roman', Times, serif; }
+
+.cajaparrafo {
+  margin-left: 80px;
+  width: 300px;
+  height: 100px; }
+
+/*cards*/
+.titulo2 {
+  text-align: center;
+  font-size: 25px;
+  padding: 10px;
+  justify-content: center;
+  color: #00028b; }
+
+.descripcion {
+  font-size: 19px;
+  text-align: justify;
+  margin: auto;
+  max-width: 1080px; }
+
+.about-services {
+  background: #f2f2f2;
+  padding-bottom: 30px; }
+
+.servicio-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1080px;
+  margin: auto; }
+
+.servicio-ind {
+  width: 28%;
+  text-align: center; }
+
+.servicio-ind img {
+  width: 50%;
+  border-radius: 10%; }
+
+.servicio-ind h3 {
+  margin: 10px 0; }
+
+.servicio-ind p {
+  font-weight: 300;
+  text-align: center; }
+
+.boton {
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px 5px;
+  display: inline-block;
+  /* box-shadow: 0 1px 0 1px rgb(0, 0, 0,0.3);*/
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.3); }
+
+.btn-blue {
+  color: white;
+  background: #363aff; }
+
+.btn-blue:hover {
+  color: white;
+  background: #00028b; }
 
 .footer {
   background-color: #4B6587;
