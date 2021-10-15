@@ -1,28 +1,30 @@
-.laboratoriodigital{
+.contenedorMuestras{
 
     width: 80%;
     max-width: 1080px;
+    //height: 50px;
+    //border: blue solid 1px;
     margin: auto;
-    height: 100%;
-    //border: springgreen solid 1px;
     display: block;
     position: static;
-
+    
     &__triangleTop{
             
-        &--triangle{
            // display: inline-block;
+            
+            &--triangle{
             width: 100%;
-            //border: springgreen solid 1px;
+            //border: springgreen solid;
             height: 50px;
-            background: linear-gradient(to bottom left, transparent 49.5%, #F0E5CF 50%);
-        }
+            background: linear-gradient(to top right, transparent 49.5%, #F0E5CF 50%);
+            display: block;
+            }
     }
 
     &__body{
 
-        background: #F0E5CF;
-        //border: $base-color;
+        background: white;
+        border: $base-color;
         display: flex;
         padding: 30px;
         padding-top: 50px;
@@ -30,7 +32,6 @@
 
         &__left{
             width: 30%;
-            position: static;
             padding: 20px;
 
             &__contenedorCircular{
@@ -78,17 +79,17 @@
                 
                 position: relative;
                 //border: khaki dotted 1px;
+                
                 display: inline-flex;
                 justify-content: flex-end;
                 height: 100%;
                 width: 100%;
-               
 
                     &--icon{
                         
                         display: inline-block;
-                        background-color: white;
-                        color: $base-color;
+                        background-color: $base-color;
+                        color: white;
                         padding: 8px;
                         padding-top: 10px;
                         border-radius: 8px 0px 0px 8px;
@@ -97,15 +98,19 @@
 
                     &--input{
                         display: inline-block;
-                        background: white;
-                        color: $base-color;
+                        background: $base-color;
+                        color: white;
                         border: none;
                         border-radius: 0px 8px 8px 0px;
                         &:focus{
-                            color: $base-color;
+                            color: white;
                             outline-offset: 0px;
-                            outline: $base-color;
+                            outline: white;
                             
+                        }
+
+                        &::placeholder{
+                            color: white;
                         }
                     }
                }
@@ -115,16 +120,15 @@
                 color: $base-color;
                 //border: red dotted 1px;
                 align-content: center;
-                margin: auto;
                 text-align: center;
                 width: 80%;
+                margin: auto;
                 margin-top: 50px;
+                margin-bottom: 10px;
             }
 
             &__contenedorBottom{
                 
-                
-
                 &--subtittle{
 
                     display: inline-block;
@@ -135,62 +139,88 @@
 
                 &__contenedorMain{
 
-                    
                     display: flex;
                     justify-content: space-between;
+                    flex-wrap: wrap;
+                    //border: khaki dotted 1px;
 
                     &__card{
-                        border-radius: 5px;
                         display: block;
-                        width: 100%;
+                        width:  calc(100% /4 - 8px);
                         background-color: white;
                         text-align: center;
-                        margin-left: 10px;
-                        margin-right: 10px;
                         //margin: auto;
+                        margin-top: 20px;
+                        border-radius: 5px;
 
                         &__contenedorimg{
 
                             width: 100%;
                             margin: auto;
+                            height: 70%;
                             //border: dotted 1px gold;
                             
                             
                             &--img{
-                                width: 60%;
+                                width: 100%;
+                                max-width: 100%;
                                 margin: auto;
                                 height: 100%;
-                                padding: 30px;
-                                text-align: center;
+                                border-radius: 5px 5px 5px 5px;
                                 display: block;
                             }
                         }
 
-                        &--name{
-                            display: block ;
-                            //size: 50px;
-                            font-size: 20px;
-                        }
+                        &__contenedorData{
 
-                        &--username{
-                            display: inline-block;
-                            border-radius: 15px;
-                            margin: 5px 0px;
-                            padding: 5px;
-                            border: black solid 1px;
-                        }
+                            height: 30%;
+                            background-color: #D1E8E4;
+                            margin-top: 5px;
+                            
+                            padding-top: 5px;
+                            border-radius: 5px;
 
-                        &--nivel{
-                            margin: auto;
-                            margin-bottom: 10px;
-                            font-size: 10px;
-                            display: block;
-                            align-items: center;
-                            background-color: black;
-                            border-radius: 10px;
-                            color: white;
-                            padding: 8px;
-                            border: none;
+                            &--name{
+                                display: block ;
+                                //size: 50px;
+                                margin-top: 5px;
+                                color: black;
+                                font-weight: bold;
+                                font-size: 18px;
+                                &__contenedorflag{
+                                    display: inline-block;
+                                    position: absolute;
+                                    &--img{
+                                        width: 20px;
+                                        margin-left: 5px;
+                                        
+                                    }
+
+                                }
+                            }
+    
+                            &--username{
+                                display: inline-block;
+                                border-radius: 15px;
+                                margin: 5px 0px;
+                                padding: 5px;
+                                border: black solid 1px;
+                            }
+    
+                            &--nivel{
+                                margin: auto;
+                                border-radius: 8px;
+                                border: 0px;
+                                margin-bottom: 10px;
+                                font-size: 10px;
+                                display: block;
+                                align-items: center;
+                                background-color: #E02401;
+                                color: white;
+                                padding: 8px;
+
+                                
+                            }
                         }
                     }
 
@@ -201,18 +231,13 @@
             
         }
     }
+
+    .ausencia{
+        background-color: #1597E5;
+    }  
     
-    .levelgold{
-        background-color: #F0A500;
-        
+    .presencia{
+        background-color: #E02401;
     }
-
-    .levelsilver{
-        background-color: lightgray;
-    }
-
-    .levelbronze{
-        background-color: brown;
-    }
-
+    
 }
