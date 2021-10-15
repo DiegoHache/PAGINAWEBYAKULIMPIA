@@ -11,6 +11,10 @@
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/15754d9d10.js" crossorigin="anonymous"></script>
 
+    <!--Google maps links -->
+
+    
+
 </head>
 
 
@@ -108,6 +112,41 @@
         </div>    
         
         
+            <!--Mapa de calor-->
+
+            <div class="contenedorMapadecalor">
+                
+                <div class="contenedorMapadecalor__triangleTop">
+                    <div class="contenedorMapadecalor__triangleTop--triangle">
+
+                    </div>
+                </div>
+                
+                <div class="contenedorMapadecalor__body">
+
+                    <div class="contenedorMapadecalor__body__left">
+                        <div class="contenedorMapadecalor__body__left__contenedorCircular">
+                            <img src="../assets/pin_de_mapa.png" alt="" class="contenedorMuestras__body__left__contenedorCircular--img">
+                        </div>
+
+                        <div class="contenedorMapadecalor__body__left__contenedorContenido">
+
+                            <h3 class="contenedorMapadecalor__body__left__contenedorContenido--title">Mapa de calor</h3>
+                            <p class="contenedorMapadecalor__body__left__contenedorContenido--description">Encuentra los ríos mas limpios y mantenido alrededor del mundo</p>
+
+                        </div>
+                        
+                    </div>
+
+                    <div class="contenedorMapadecalor__body__right">
+                        <div class="contenedorMapadecalor__body__right--mapa" id="map"></div>
+                    </div>
+
+                </div>
+
+                
+
+            </div>
             
             <!-- Contenedor Muestras -->
             <div class="contenedorMuestras">
@@ -492,5 +531,15 @@
         </div>
 
     </footer>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwaQikpLZi0uBWw8s4BAB7ON98a4DKSCY&callback=initMap&libraries=&v=weekly&channel=2"
+      async
+    ></script>
+
+    <script src="../javascript/map.js"></script>
+
+    
+
 </body>
 </html>
