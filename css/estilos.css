@@ -10,19 +10,28 @@
     width: 100%;
     height: 30%;
     background-repeat: no-repeat;
-    margin:50px 200px 20px 0px;
+    margin-top: 0px;
   }
 
   .pbanner{
-    margin-top: -69px; 
-    margin-left: 200px;
-    margin-bottom: 400px; 
-    margin-right: 100px;
+    padding-right: 100px;
+    padding-left: 77px;
+    padding-top: 385px;
     color: white; 
-    top: 1px; 
     font-family:Georgia, 'Times New Roman', Times, serif;
   }
 
+  .parrafobanner {
+    color: thistle;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .cajaparrafo {
+    margin-left: 80px; 
+    width: 300px; 
+    height: 100px;
+
+  }
 .caja {
   padding: 25px; }
 
