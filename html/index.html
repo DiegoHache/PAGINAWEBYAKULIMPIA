@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--SCRIPT CDN PARA USAR CHART.JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.js"></script>
     <title> YAKU-LIMPIA</title>
     
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/cosmo/bootstrap.min.css" integrity="sha384-5QFXyVb+lrCzdN228VS3HmzpiE7ZVwLQtkt+0d9W43LQMzz4HBnnqvVxKg6O+04d" crossorigin="anonymous">
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/15754d9d10.js" crossorigin="anonymous"></script>
-
+    
 </head>
 
 
@@ -52,11 +55,25 @@
             <br>
             <br>
         </div>
-        <br>
-        <br>
-
-
+      
+        <!--GRAFICA DE BARRAS CON CHART.JS-->
+        <div class="contenedor-graf">
+            <h1 class="titulo1">Gráficos de las muestras registradas en Yaku Limpia</h1>
+            <div class="grafico barras">
+                <h2 class="titulo2"><b>Gráfica de barras</b></h2>
+             <canvas id="miChart" width="400" height="400"></canvas>
+            </div>
+            <div class="grafico circular">
+                 <h2 class="titulo2"><b>Gráfica circular</b></h2>
+                 <canvas id="miChart2" width="400" height="400"></canvas>
+             </div>
+        </div>
+      
+       
     
+
+
+
 
    
 
@@ -65,7 +82,7 @@
 
             <div class="caja contenido">
                 <div class="titulo2">
-                    <h1>Bienvenido a nuestra página oficial</h1>
+                    <h1>Bienvenido a la página oficial de <b>YAKU-LIMPIA</b></h1>
                 </div>
                 <div class="descripcion">
                     <h3>Yaku Limpia cuenta con múltiples servicios, entre ellos un laboratorio virtual que te permite realizar experimentos mientras aprendes y ganas puntos, un apartado de muestras, que permite conocer el total de muestras registradas con nuestro aplicativo y un Dashboard, para conocer el estado de los usuarios y la información registrada.
@@ -465,8 +482,8 @@
                 
 
             </div>
-
-            </body>
+            
+            
 
 
 
@@ -492,5 +509,45 @@
         </div>
 
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.js"></script>
 </body>
+
+<script>
+    var ctx = document.getElementById("miChart").getContext("2d");
+
+    var myChart = new Chart(ctx,{
+        type:"bar",
+        data:{
+            labels:["Positivas","Negativas"],
+            datasets:[
+                {
+                    label: "Muestras registradas en Yaku Limpia",
+                    data:[85,42],
+                    backgroundColor: [
+                        'rgb(229,89,50)',
+                        'rgb(66,134,244)'
+                    ]
+                }]
+        }
+    });
+
+
+    var ctx = document.getElementById("miChart2").getContext("2d");
+
+    var myChart = new Chart(ctx,{
+        type:"pie",
+        data:{
+            labels:["Positivas","Negativas"],
+            datasets:[
+                {
+                    label: "Muestras registradas en Yaku Limpia",
+                    data:[85,42],
+                    backgroundColor: [
+                        'rgb(229,89,50)',
+                        'rgb(66,134,244)'
+                    ]
+                }]
+        }
+    });
+</script>
 </html>

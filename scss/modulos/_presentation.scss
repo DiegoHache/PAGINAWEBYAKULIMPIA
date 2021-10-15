@@ -30,6 +30,18 @@
   }
   
 /*cards*/
+
+.titulo1{
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    justify-content: center;
+    color: rgb(0, 2, 139);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    grid-area: t1;
+ }
+
 .titulo2{
     text-align: center;
     font-size: 25px;
@@ -96,4 +108,27 @@
  }
 
 
- 
+ .grafico{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1080px;
+    margin: auto;
+    width: 400px;
+   margin-bottom: 50px;
+}
+
+.contenedor-graf{
+    display: grid;
+
+    grid-template-areas: 't1 t1 t1'
+                        'g1 g2 g2 ';
+}
+.barras{
+    grid-area: g1;
+    line-height: 1px;
+}
+.circular{
+    grid-area: g2;
+    line-height: 1px;
+}
