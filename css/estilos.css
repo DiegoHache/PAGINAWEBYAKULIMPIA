@@ -38,23 +38,38 @@
   background-repeat: no-repeat; }
 
 .footer {
-  background-color: green;
+  background-color: #4B6587;
   color: white;
-  text-align: center; }
+  text-align: center;
+  max-width: 1080px;
+  margin: auto; }
+  .footer__contenedor__nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-left: 50px;
+    padding-right: 50px; }
+    .footer__contenedor__nav--enlaces {
+      text-decoration: none;
+      color: white; }
+  .footer__contenedor__contact--title {
+    font-size: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
 
 .laboratoriodigital {
   width: 80%;
   max-width: 1080px;
-  height: 50px;
   margin: auto;
-  display: block; }
-  .laboratoriodigital__triangleTop {
+  height: 100%;
+  display: block;
+  position: static; }
+  .laboratoriodigital__triangleTop--triangle {
     width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom left, transparent 49.5%, #4A5F74 50%); }
+    height: 50px;
+    background: linear-gradient(to bottom left, transparent 49.5%, #F0E5CF 50%); }
   .laboratoriodigital__body {
-    background: #4A5F74;
-    border: #4A5F74;
+    background: #F0E5CF;
     display: flex;
     padding: 30px;
     padding-top: 50px; }
@@ -72,7 +87,7 @@
       .laboratoriodigital__body__left__contenedorContenido {
         text-align: center; }
         .laboratoriodigital__body__left__contenedorContenido--title {
-          color: white; }
+          color: #4A5F74; }
         .laboratoriodigital__body__left__contenedorContenido--description {
           margin-top: 15px; }
     .laboratoriodigital__body__right {
@@ -104,8 +119,9 @@
               outline-offset: 0px;
               outline: #4A5F74; }
       .laboratoriodigital__body__right__contenedorMiddle {
-        color: white;
+        color: #4A5F74;
         align-content: center;
+        margin: auto;
         text-align: center;
         width: 80%;
         margin-top: 50px; }
@@ -115,8 +131,10 @@
         margin-top: 8px;
         margin-bottom: 8px; }
       .laboratoriodigital__body__right__contenedorBottom__contenedorMain {
-        display: flex; }
+        display: flex;
+        justify-content: space-between; }
         .laboratoriodigital__body__right__contenedorBottom__contenedorMain__card {
+          border-radius: 5px;
           display: block;
           width: 100%;
           background-color: white;
@@ -135,7 +153,7 @@
               display: block; }
           .laboratoriodigital__body__right__contenedorBottom__contenedorMain__card--name {
             display: block;
-            font-size: 25px; }
+            font-size: 20px; }
           .laboratoriodigital__body__right__contenedorBottom__contenedorMain__card--username {
             display: inline-block;
             border-radius: 15px;
@@ -149,7 +167,153 @@
             display: block;
             align-items: center;
             background-color: black;
+            border-radius: 10px;
             color: white;
-            padding: 8px; }
+            padding: 8px;
+            border: none; }
+  .laboratoriodigital .levelgold {
+    background-color: #F0A500; }
+  .laboratoriodigital .levelsilver {
+    background-color: lightgray; }
+  .laboratoriodigital .levelbronze {
+    background-color: brown; }
+
+.contenedorMuestras {
+  width: 80%;
+  max-width: 1080px;
+  margin: auto;
+  display: block;
+  position: static; }
+  .contenedorMuestras__triangleTop--triangle {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to top right, transparent 49.5%, #F0E5CF 50%);
+    display: block; }
+  .contenedorMuestras__body {
+    background: white;
+    border: #4A5F74;
+    display: flex;
+    padding: 30px;
+    padding-top: 50px; }
+    .contenedorMuestras__body__left {
+      width: 30%;
+      padding: 20px; }
+      .contenedorMuestras__body__left__contenedorCircular {
+        display: block;
+        padding: 20px; }
+        .contenedorMuestras__body__left__contenedorCircular--img {
+          width: 100%;
+          height: 100%;
+          display: block; }
+      .contenedorMuestras__body__left__contenedorContenido {
+        text-align: center; }
+        .contenedorMuestras__body__left__contenedorContenido--title {
+          color: #4A5F74; }
+        .contenedorMuestras__body__left__contenedorContenido--description {
+          margin-top: 15px; }
+    .contenedorMuestras__body__right {
+      width: 70%; }
+      .contenedorMuestras__body__right__contenedorTop {
+        text-align: end;
+        white-space: nowrap; }
+        .contenedorMuestras__body__right__contenedorTop__inside {
+          position: relative;
+          display: inline-flex;
+          justify-content: flex-end;
+          height: 100%;
+          width: 100%; }
+          .contenedorMuestras__body__right__contenedorTop__inside--icon {
+            display: inline-block;
+            background-color: #4A5F74;
+            color: white;
+            padding: 8px;
+            padding-top: 10px;
+            border-radius: 8px 0px 0px 8px; }
+          .contenedorMuestras__body__right__contenedorTop__inside--input {
+            display: inline-block;
+            background: #4A5F74;
+            color: white;
+            border: none;
+            border-radius: 0px 8px 8px 0px; }
+            .contenedorMuestras__body__right__contenedorTop__inside--input:focus {
+              color: white;
+              outline-offset: 0px;
+              outline: white; }
+            .contenedorMuestras__body__right__contenedorTop__inside--input::placeholder {
+              color: white; }
+      .contenedorMuestras__body__right__contenedorMiddle {
+        color: #4A5F74;
+        align-content: center;
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 10px; }
+      .contenedorMuestras__body__right__contenedorBottom--subtittle {
+        display: inline-block;
+        margin-left: 10px;
+        margin-top: 8px;
+        margin-bottom: 8px; }
+      .contenedorMuestras__body__right__contenedorBottom__contenedorMain {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; }
+        .contenedorMuestras__body__right__contenedorBottom__contenedorMain__card {
+          display: block;
+          width: calc(100% /4 - 8px);
+          background-color: white;
+          text-align: center;
+          margin-top: 20px;
+          border-radius: 5px; }
+          .contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorimg {
+            width: 100%;
+            margin: auto;
+            height: 70%; }
+            .contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorimg--img {
+              width: 100%;
+              max-width: 100%;
+              margin: auto;
+              height: 100%;
+              border-radius: 5px 5px 5px 5px;
+              display: block; }
+          .contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData {
+            height: 30%;
+            background-color: #D1E8E4;
+            margin-top: 5px;
+            padding-top: 5px;
+            border-radius: 5px; }
+            .contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--name {
+              display: block;
+              margin-top: 5px;
+              color: black;
+              font-weight: bold;
+              font-size: 18px; }
+              .contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--name__contenedorflag {
+                display: inline-block;
+                position: absolute; }
+                .contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--name__contenedorflag--img {
+                  width: 20px;
+                  margin-left: 5px; }
+            .contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--username {
+              display: inline-block;
+              border-radius: 15px;
+              margin: 5px 0px;
+              padding: 5px;
+              border: black solid 1px; }
+            .contenedorMuestras__body__right__contenedorBottom__contenedorMain__card__contenedorData--nivel {
+              margin: auto;
+              border-radius: 8px;
+              border: 0px;
+              margin-bottom: 10px;
+              font-size: 10px;
+              display: block;
+              align-items: center;
+              background-color: #E02401;
+              color: white;
+              padding: 8px; }
+  .contenedorMuestras .ausencia {
+    background-color: #1597E5; }
+  .contenedorMuestras .presencia {
+    background-color: #E02401; }
 
 /*# sourceMappingURL=estilos.css.map */
